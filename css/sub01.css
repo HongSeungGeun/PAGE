@@ -1,0 +1,1105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+/* header */
+
+.header-fixed {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header h1 {
+    margin: 25px;
+}
+
+header ul {
+    display: flex;
+    color : #F5A9F2
+}
+
+
+header ul li {
+    font-size: 18px;
+    margin: auto;
+    padding: 35px;
+}
+
+
+
+.header ul li:last-child i {
+    cursor: pointer;
+}
+
+/* //header */
+
+
+/* menu-bar */
+
+.show {
+    display: none;
+    transition: all 0.6s;
+}
+
+.menu-bar {
+    width: 24.73%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 2;
+}
+
+.menu-bar #close-btn {
+    position: absolute;
+    top: 4%;
+    left: 86%;
+    width: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-bar .bar01  {
+    margin-top: 100px;
+}
+
+.menu-bar .bar01 li{
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.menu-bar .bar01 li:last-child {
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: auto;
+}
+
+.menu-bar .bar01 li:last-child:hover {
+    background-color: transparent;
+    cursor: auto;
+}
+
+.menu-bar .bar01 li:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.menu-bar .bar01 li a {
+    display: block;
+}
+
+
+.menu-bar .bar02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 4rem;
+    color: white;
+}
+
+
+.menu-bar .bar02 .icon {
+    width: 2rem;
+    height: 100%;
+    border-radius: 30%;
+}
+
+.menu-bar .bar03 {
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.menu-bar .bar03 li {
+    padding: 1rem;
+}
+
+
+.black-bg01 {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+}
+
+.black-bg02 {
+    width : 100%;
+    height : 100%;
+    position : fixed;
+    background : rgba(0,0,0,0.5);
+    z-index : 6;
+    padding: 30px;
+    visibility: hidden;
+    opacity: 1;
+}
+
+
+/* //menubar */
+
+
+/* 영역 이미지 */
+.area-img {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+}
+
+.area-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.area-img h1 {
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* //영역 이미지 */
+
+
+/* section about01 */
+.section-about01 {
+    width: 61%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 600px;
+}
+
+.section-about01 .about-title {
+    display: flex;
+    font-size: 1.5rem;
+    color: #F5A9F2;
+}
+
+.section-about01 .about-title h2:nth-of-type(1) {
+    margin-left: 8.2vw;
+}
+
+.section-about01 .about-title h2:nth-of-type(2) {
+    margin-left: 18.6vw;
+}
+
+.section-about01 .about-content {
+    display: flex;
+}
+
+.section-about01 .about-content .content-profile {
+    margin-left: 8.2vw;
+}
+
+.section-about01 .about-content .content-awards {
+    margin-left: 15vw;
+}
+
+.span-margin01 {
+    margin-right: 2vw;
+}
+
+.span-margin02 {
+    margin-right: 1.3vw;
+}
+
+.span-margin03 {
+    margin-right: 1vw;
+}
+
+
+.section-about01 .about-content .content-profile h3,  .section-about01 .about-content .content-awards h3{
+    margin-top: 80px;
+    font-size: 1.5rem;
+}
+
+.section-about01 .about-content .content-profile p, .section-about01 .about-content .content-awards p {
+    margin-top: 25px;
+}
+
+
+/* //section about01 */
+
+
+/* section about02 */
+.section-about02 {
+    width: 62%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 200px;
+    padding-bottom: 150px;
+}
+
+.section-about02 .about-filmo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #F5A9F2;
+}
+
+.section-about02 .filmo-box {
+    width: 100%;
+    height: 100%;
+}
+
+.section-about02 .filmo-title li{
+    float: left;
+    width: 20%;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.section-about02 .about01-content {
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-about02 .about01-content figure {
+    float: left;
+    padding-top: 150px;
+    width: 23%;
+    height: 550px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.section-about02 .about01-content figure:not(:nth-of-type(4), :nth-of-type(8), :nth-of-type(12)) {
+    margin-right: 1vw;
+}
+
+
+.section-about02 .about01-content figure p:nth-of-type(1) {
+    margin-top: 40px;
+}
+
+.section-about02 .about01-content figure p:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.section-about02 .about01-content figure img{
+    width: 100%;
+    height: 300px;
+}
+
+.title-movie {
+    color: #F5A9F2;
+}
+
+.section-about02 .cf-content {
+    float: left; 
+    width: 25%;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+/*modal */
+
+.section-about02 .modal {
+    width: 500px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    position: fixed;
+    padding: 10px;
+}
+
+.section-about02 .modal span {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    cursor: pointer;
+}
+
+
+.section-about02 .modal p {
+    margin-top: 15px;
+}
+
+.section-about02 .modal p:nth-of-type(6) {
+    line-height: 30px;
+}
+
+.section-about02 .modal p:not(:nth-of-type(6)) {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.section-about02 .movie11 p:last-child {
+    font-size: 0.9rem;
+} 
+
+/* //modal */
+
+
+/* //section about02 */
+
+
+
+
+
+
+
+
+
+/* filmo-movie ㅡㅡㅡㅡ display : none */
+
+.section-about02 .filmo-movie {
+    display: block;
+}
+
+/* //filmo-movie ㅡㅡㅡㅡ display : none */
+
+
+/* filmo-drama ㅡㅡㅡㅡ dispaly : none */
+
+.section-about02 .filmo-drama {
+    display: none;
+}
+
+/* //filmo-drama ㅡㅡㅡㅡ dispaly : none */
+
+
+
+/* filmo-mv ㅡㅡㅡㅡ dispaly : none */
+
+.section-about02 .filmo-mv {
+    display: none;
+}
+
+/* //filmo-mv ㅡㅡㅡㅡ dispaly : none */
+
+
+
+
+/* filmo-cf ㅡㅡㅡㅡ dispaly : none */
+
+.section-about02 .filmo-cf {
+    display: none;
+}
+
+/* //filmo-cf ㅡㅡㅡㅡ dispaly : none */
+
+
+
+
+/* filmo-ost ㅡㅡㅡㅡ dispaly : none */
+
+.section-about02 .filmo-ost {
+    display: none;
+}
+
+/* //filmo-ost ㅡㅡㅡㅡ dispaly : none */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* movie-modal ㅡㅡㅡㅡ display : none */
+
+.section-about02 .movie01 {
+    display: none;
+}
+
+.section-about02 .movie02 {
+    display: none;
+}
+
+.section-about02 .movie03 {
+    display: none;
+}
+
+.section-about02 .movie04 {
+    display: none;
+}
+
+.section-about02 .movie05 {
+    display: none;
+}
+
+.section-about02 .movie06 {
+    display: none;
+}
+
+.section-about02 .movie07 {
+    display: none;
+}
+
+.section-about02 .movie08 {
+    display: none;
+}
+
+.section-about02 .movie09 {
+    display: none;
+}
+
+.section-about02 .movie10 {
+    display: none;
+}
+
+.section-about02 .movie11 {
+    display: none;
+}
+
+.section-about02 .movie12 {
+    display: none;
+}
+
+.section-about02 .movie13 {
+    display: none;
+}
+
+.section-about02 .movie14 {
+    display: none;
+}
+
+.section-about02 .movie15 {
+    display: none;
+}
+
+/* //movie-modal ㅡㅡㅡㅡ display : none */
+
+/* drama-moal ㅡㅡㅡㅡ dispaly : none */
+
+.section-about02 .drama01 {
+    display: none;
+}
+
+.section-about02 .drama02 {
+    display: none;
+}
+
+
+.section-about02 .drama03 {
+    display: none;
+}
+
+
+.section-about02 .drama04 {
+    display: none;
+}
+
+
+.section-about02 .drama05 {
+    display: none;
+}
+
+
+.section-about02 .drama06 {
+    display: none;
+}
+
+
+.section-about02 .drama07 {
+    display: none;
+}
+
+
+.section-about02 .drama08 {
+    display: none;
+}
+
+
+.section-about02 .drama09 {
+    display: none;
+}
+
+
+.section-about02 .drama10 {
+    display: none;
+}
+
+
+
+/* //drama-moal ㅡㅡㅡㅡ dispaly : none */
+
+
+
+
+
+
+
+
+
+
+/* modal-bg */
+.black-bg01 {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+}
+
+.black-bg02 {
+    width : 100%;
+    height : 100%;
+    position : fixed;
+    background : rgba(0,0,0,0.5);
+    z-index : 6;
+    padding: 30px;
+    visibility: hidden;
+    opacity: 1;
+}
+/* //modal-bg */
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer .copy {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* //footer */
+
+
+
+/* scroll */
+.top-scroll {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    cursor: pointer;
+    display: inline;
+}
+/* //scroll */
+
+
+
+
+
+
+
+
+@media screen and  (min-width:751px) and (max-width:1150px){
+    .menu-bar {
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 2;
+    }
+
+    .menu-bar #close-btn {
+        display: block;
+    }
+
+    .area-img h1 {
+        font-size: 2.5rem;
+    }
+
+
+/* section about01 */
+.section-about01 {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 600px;
+}
+
+
+
+/* //section about01 */
+
+
+
+    .section-about02 {
+        width: 80%;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 500px;
+        padding-bottom: 150px;
+    }
+    
+    .section-about02 .about-filmo {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F5A9F2;
+    }
+    
+    .section-about02 .filmo-box {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .section-about02 .filmo-title li{
+        float: left;
+        width: 20%;
+        margin-top: 150px;
+        text-align: center;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
+    
+    .section-about02 .about01-content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .section-about02 .about01-content figure {
+        float: left;
+        padding-top: 150px;
+        width: 23%;
+        height: 550px;
+        text-align: center;
+        font-size: 0.95rem;
+        cursor: pointer;
+    }
+
+    /*modal */
+
+.section-about02 .modal {
+    width: 500px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    position: fixed;
+    padding: 10px;
+}
+
+.section-about02 .modal span {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.section-about02 .modal p {
+    margin-top: 15px;
+}
+
+.section-about02 .modal p:nth-of-type(6) {
+    line-height: 30px;
+}
+
+.section-about02 .modal p:not(:nth-of-type(6)) {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.section-about02 .modal p:last-child {
+    display: none;
+} 
+
+
+/* //modal */
+}
+
+
+@media screen and  (min-width:500px) and (max-width:750px){
+    header ul li:not(:nth-of-type(3)) {
+        display: none;
+    }
+
+    .menu-bar {
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 2;
+    }
+
+    .menu-bar #close-btn {
+        display: block;
+    }
+
+    .area-img h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-about01 {
+        display: none;
+    }
+
+
+
+
+    .section-about02 {
+        width: 90%;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 500px;
+        padding-bottom: 150px;
+    }
+    
+    .section-about02 .about-filmo {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F5A9F2;
+    }
+    
+    .section-about02 .filmo-box {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .section-about02 .filmo-title li{
+        float: left;
+        width: 20%;
+        margin-top: 150px;
+        text-align: center;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    
+    
+    .section-about02 .about01-content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .section-about02 .about01-content figure {
+        float: left;
+        padding-top: 150px;
+        width: 23%;
+        height: 550px;
+        text-align: center;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    /*modal */
+
+.section-about02 .modal {
+    width: 300px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    position: fixed;
+    padding: 10px;
+}
+
+.section-about02 .modal span {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.section-about02 .modal p {
+    margin-top: 15px;
+}
+
+.section-about02 .modal p:nth-of-type(6) {
+    line-height: 30px;
+}
+
+.section-about02 .modal p:not(:nth-of-type(6)) {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.section-about02 .modal p:last-child {
+    display: none;
+} 
+
+
+/* //modal */
+}
+
+@media screen and  (min-width:360px) and (max-width:449px){
+    .container {
+        padding-bottom: 0px;
+    }
+
+    header ul li:not(:nth-of-type(3)) {
+        display: none;
+    }
+
+    header ul li {
+        font-size: 0.85rem;
+        margin: auto;
+        padding: 35px;
+    }
+
+    .menu-bar {
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 2;
+    }
+
+    .menu-bar #close-btn {
+        display: block;
+    }
+
+    .menu-bar .bar03 {
+        display: none;
+    }
+
+    .area-img h1 {
+        font-size: 2.5rem;
+    }
+
+    .area-img {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+    }
+
+    .section-about01 {
+        width: 90%;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 500px;
+    }
+    
+    .about-title h2:nth-of-type(1) {
+        display: none;
+    }
+
+    .content-profile {
+        display: none;
+    }
+
+    .section-about01 .about-title h2:nth-of-type(2) {
+        margin-left: 27vw;
+}
+
+    .section-about01 .about-content .content-profile h3,  .section-about01 .about-content .content-awards h3{
+        font-size: 1rem;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .section-about01 .about-content .content-profile p, .section-about01 .about-content .content-awards p {
+        margin-top: 35px;
+        font-size: 0.8rem;
+    }
+
+
+
+    .section-about02 {
+        width: 90%;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 200px;
+        /* padding-bottom: 150px; */
+    }
+    
+    .section-about02 .about-filmo {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F5A9F2;
+    }
+    
+    .section-about02 .filmo-box {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .section-about02 .filmo-title li{
+        float: left;
+        width: 20%;
+        margin-top: 150px;
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    
+    .section-about02 .about01-content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .section-about02 .about01-content figure {
+        float: left;
+        padding-top: 150px;
+        width: 23%;
+        height: 550px;
+        text-align: center;
+        font-size: 0.75rem;
+        cursor: pointer;
+    }
+
+    .section-about01 .about-content .content-awards {
+        margin-right: 15vw;
+    }
+
+    /*modal */
+
+.section-about02 .modal {
+    width: 300px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    position: fixed;
+    padding: 10px;
+}
+
+.section-about02 .modal span {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.section-about02 .modal p {
+    margin-top: 15px;
+}
+
+.section-about02 .modal p:nth-of-type(6) {
+    line-height: 30px;
+}
+
+.section-about02 .modal p:not(:nth-of-type(6)) {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.section-about02 .modal p:last-child {
+    display: none;
+} 
+/* //modal */
+    footer .copy {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        font-size: 0.43rem;
+    }
+
+    .top-scroll {
+        position: absolute;
+        bottom: 0.5%;
+        right: 5%;
+        cursor: pointer;
+        display: inline;
+    }
+}
